@@ -1,0 +1,24 @@
+services:
+  medicareapi:
+    image: ${DOCKER_REGISTRY-}medicareapi
+    build:
+      context: MedicareApi
+      dockerfile: Dockerfile
+    ports:
+      - "${APP_PORT-8080}:8080"
+      - "${APP_PORT-8081}:8081"
+    depends_on:
+      - db
+    env_file:
+      - .env
+  db:
+    image: postgres:16.2
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql #Creating tables.
+volumes:
+  postgres_data:

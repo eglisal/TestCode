@@ -19,7 +19,7 @@ Medicare API is an ASP.NET Core webapi designed to return a list of patients.
     cd ApiTaskTest
     ```
 
-2. Set up the development environment. Create a `.env` file in the root of the project and add the following environment variables:
+2. The development environment has been set up. A .env file has been created in the root of the project with the following environment variables:
 
     ```env
 	POSTGRES_DB=medicaredb

@@ -15,7 +15,7 @@ Medicare API is an ASP.NET Core webapi designed to return a list of patients.
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/eglisal/ApiTaskTest.git
+    git clone https://github.com/eglisal/TestCode.git
     cd TestCode
     ```
 

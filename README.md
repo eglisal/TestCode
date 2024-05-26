@@ -16,7 +16,7 @@ Medicare API is an ASP.NET Core webapi designed to return a list of patients.
 
     ```sh
     git clone https://github.com/eglisal/ApiTaskTest.git
-    cd ApiTaskTest
+    cd TestCode
     ```
 
 2. The development environment has been set up. A .env file has been created in the root of the project with the following environment variables:
